@@ -17,8 +17,8 @@ RCT_EXPORT_MODULE()
 
 - (NSArray<NSString *> *)supportedEvents
 {
-  return @[@"statusBarSizeWillChange",
-           @"statusBarSizeDidChange"];
+  return @[@"statusBarFrameWillChange",
+           @"statusBarFrameDidChange"];
 }
 
 - (void)startObserving
