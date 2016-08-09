@@ -9,9 +9,9 @@ const { RNStatusBarSize } = NativeModules;
 const StatusBarEmitter = new NativeEventEmitter(RNStatusBarSize);
 
 var DEVICE_STATUS_BAR_HEIGHT_EVENTS = {
-  willChange: 'statusBarSizeWillChange',
-  didChange: 'statusBarSizeDidChange',
-  change: 'statusBarSizeDidChange'
+  willChange: 'statusBarFrameWillChange',
+  didChange: 'statusBarFrameDidChange',
+  change: 'statusBarFrameDidChange'
 };
 
 var _statusBarSizeHandlers = {};
